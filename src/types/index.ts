@@ -38,14 +38,13 @@ export interface Recipe {
   healthLabels: string[];
 }
 
-export interface RecipeProps {
-  recipe: Recipe;
-}
-
 export interface RecipesProps {
   recipesData: RecipeProps[];
 }
 
+export interface RecipeProps {
+  recipe: Recipe;
+}
 export interface InfoTileProps {
   value: number;
   title: string;
