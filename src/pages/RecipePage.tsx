@@ -4,7 +4,6 @@ import { Recipe, RequestParams } from "../types";
 import InfoTile from "../components/InfoTile";
 import IngredientList from "../components/IngredientList";
 import HealthLabelsList from "../components/HealthLabelsList";
-
 import useRecipesData from "../hooks/useRecipesData";
 import { DEFAULT_LIMIT_NUMBER } from "../constants";
 import { useParams } from "react-router-dom";
@@ -47,8 +46,6 @@ function RecipePage() {
       setRequestParams({ ...requestParams, query: cuisineType[0] });
     }
   }, [cuisineType]);
-
-  console.log(recipesData);
 
   return (
     <>

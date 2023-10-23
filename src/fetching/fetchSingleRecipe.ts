@@ -5,7 +5,7 @@ export const fetchSingleRecipe = async (id: string) => {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data[0]);
+
     return data;
   } catch (error) {
     console.log(error);

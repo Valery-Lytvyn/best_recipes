@@ -29,7 +29,7 @@ function Home(): JSX.Element {
   const showMoreHandler = () => {
     setRequestParams((prev) => ({ ...requestParams, limit: prev.limit + 10 }));
   };
-  console.log(recipesData);
+
   return (
     <>
       <Banner title={HOME_BANNER_TITLE} subtitle={HOME_BANNER_SUBTITLE} />
