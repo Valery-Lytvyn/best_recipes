@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { ROUTES } from "./routes";
 import {
   ErrorPage,
@@ -8,7 +8,7 @@ import {
   RecipePage,
 } from "../pages";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: ROUTES.index,
     element: <Layout />,
